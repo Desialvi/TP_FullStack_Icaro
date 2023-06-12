@@ -1,7 +1,7 @@
 // 1. La variable definida abajo almacena un numero entero entre 1 y 100 de forma aleatoria, 
 //es decir que cada vez que se vuelva a ejectuar el codigo obtendrá un número nuevo aleatorio.
 
-const numeroRandom = Math.floor(Math.random() * (100 - 1 + 1) + 1);
+let numeroRandom = Math.floor(Math.random() * (100 - 1 + 1) + 1);
 
 //Usar esta variable para determinar si el número es par o impar (Un número es par si el resto de 
 //la división sobre 2 es igual a 0). Para calcular el resto usar: resto = dividendo % 2.
@@ -40,6 +40,17 @@ while (i <= 10) {
     i=i+1
 }
 
+// 5. Escribir un programa que inicie un array vacío y luego vaya almacenando números aleatorios. 
+// Puede usar la variable "numeroRandom" del ejercicio 1.
+
+let lista = []
+for (i=0; i<50; i++){
+    let numeroRandom = Math.floor(Math.random() * (100 - 1 + 1) + 1);
+    lista.push(numeroRandom)
+}
+
+console.log(lista)
+
 //4. Escribir una función con el nombre "multiplicar" que me permita pasarle un número como párametro y lo multiplique x 23 y 
 //retorne el resultado. Usar esta funcion en otra variable y mostrar el resultado con el console.log
 
@@ -59,6 +70,9 @@ read.question("Ingrese un número: ", function(num){
     console.log("El resultado de multiplicar", num, "por 23 es", Resultado)
     read.close() 
 })
+
+
+
 
 
 
