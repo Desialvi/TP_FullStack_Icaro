@@ -39,3 +39,28 @@ while (i <= 10) {
     console.log( "9 x",i,"=",i*9)
     i=i+1
 }
+
+//4. Escribir una función con el nombre "multiplicar" que me permita pasarle un número como párametro y lo multiplique x 23 y 
+//retorne el resultado. Usar esta funcion en otra variable y mostrar el resultado con el console.log
+
+function multiplicar(numero) {
+    Result = numero*23
+    return Result
+}
+
+const readline = require('readline')
+let read = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+})
+
+read.question("Ingrese un número: ", function(num){
+    let Resultado = multiplicar(num)
+    console.log("El resultado de multiplicar", num, "por 23 es", Resultado)
+    read.close() 
+})
+
+
+
+
+
